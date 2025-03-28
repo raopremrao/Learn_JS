@@ -2,6 +2,7 @@ const accountId = 123456
 let accountEmail = "hidsfhgasdf@gmail.com"
 var accountPassword = "1234567890"
 accountCity = "Odisha"
+let accountState;
 
 // accountId = 2 //not allowed
 accountEmail = "HelloWorld@gmail.com"
@@ -14,5 +15,5 @@ because of issue in block scope and function scope
 Use let and const
 */
 console.log(accountId);
-console.table([accountId, accountEmail, accountPassword, accountCity]);     
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);     
 
