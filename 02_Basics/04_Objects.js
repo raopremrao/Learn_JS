@@ -44,14 +44,58 @@ const users = [
 ]
 
 // users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // Returns an array of keys
-console.log(Object.values(tinderUser)); // Returns an array of values
-console.log(Object.entries(tinderUser)); // Returns an array of key-value pairs in the form of arrays in Array
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Returns true if the object has the property, otherwise false
+// console.log(Object.keys(tinderUser)); // Returns an array of keys
+// console.log(Object.values(tinderUser)); // Returns an array of values
+// console.log(Object.entries(tinderUser)); // Returns an array of key-value pairs in the form of arrays in Array
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Returns true if the object has the property, otherwise false
 
 
+// ++++++++++++++++++++++++++++++++++123+++++++++++++++++++++++++++==
+
+//  Object de-structure and JSON API Intro
+
+const course = {
+    coursename: "JS in Hindi",
+    price: "999",
+    courseInstructor: "T Prem"
+}
+
+// course.courseInstructor
+
+// const {courseInstructor} = course // Object destructuring
+const {courseInstructor: instructor} = course // Object destructuring
+
+// console.log(courseInstructor); // T Prem
+console.log(instructor); 
+
+
+// for react
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "Prem")
+
+// ++++++++JSON API Intro+++++++
+
+// JSON - JavaScript Object Notation
+// JSON is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate.
+// +++++++++++======= 1
+// {
+//     "name": "T Prem",
+//     "coursename": "JS in Hindi",
+//     "price": "free"
+// }
+
+//++++++++++++++++++================= 2
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
 
 
 
