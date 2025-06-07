@@ -24,7 +24,7 @@ function addTwoNumbers(num1, num2){
 
 const result = addTwoNumbers(3, true);
 
-console.log(result); 
+// console.log(result); 
 
 function loginUserMessage(username = "Prem"){
     if(username === undefined){    // can also be written as if(!username)
@@ -35,6 +35,37 @@ function loginUserMessage(username = "Prem"){
     return `${username} just logged in!`
 }
 
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
 
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000));
+
+const user = {
+    username: "Prem",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    
+}
+
+// handleObject(user);
+handleObject({
+    username: "Prem",
+    price: 199
+});
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(array){
+    return array[1];
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 400, 100, 600]));
 
